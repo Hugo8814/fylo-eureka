@@ -13,7 +13,7 @@ html {
   background-repeat: no-repeat;
   background-color: hsl(229, 57%, 11%);
   width: 100%;
-  height: 100vh;
+  height: 95vh;
 
   background-position: bottom;
 }
@@ -90,10 +90,12 @@ html {
     font-size: 14px;
     color: rgb(245, 240, 240);
     font-weight: 200;
+    margin-left: 3rem;
+    margin-top:4.5rem ;
+
     &-8{
       font-weight: 800;
       color: #fff;
-      
     }
     
   }
@@ -102,22 +104,23 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    
     font-weight: 200;
     width: 15rem;
-    height: 8rem;
+    height: 7rem;
     background-color: #fff;
     position: absolute;
     top: -30%;
     right: 7%;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 100% 100%, 79% 75%, 50% 75%, 0% 75%);
+
     
-    border-radius: 9px;
+    
+    border-radius: 9px 9px 0px 9px;
     &-1{
 
       font-size: 38px;
       font-weight: 800;
       margin-bottom: 3rem;
+      margin-top: 2rem;
       
 
     }
@@ -126,7 +129,7 @@ html {
       font-size: 12px;
       font-weight: 800;
       color: gray;
-      margin-bottom: 2rem;
+      margin-left: 1rem ;
     }
   }
 
@@ -134,20 +137,23 @@ html {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 80%;
+    width: 87%;
     background-color: hsl(229, 57%, 11%);
     border-radius: 25px;
-    height: 1.5rem;
+    height: 1.6rem;
+    margin-left: 3rem;
+    margin-right:3rem ;
+    margin-top: 15px;
     &__color{
       display: flex;
       justify-content: end;
-      width: 60%;
+      width: 77%;
       height: 1.2rem;
       background: linear-gradient( hsl(6, 100%, 80%), hsl(335, 100%, 65%)) ;
       border-radius: 20px;
+      margin-left: 3px;
     }
     &-ball{
-      
       width: 1.2rem;
       height: 1.2rem;
       background-color: #fff;
@@ -155,8 +161,32 @@ html {
     }
 
   }
+  &__gb{
+    width: 88%;
+    height: 2rem;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+    margin-top: 0.8rem;
+   
+    
+  }
   
 
 
 
+}
+.tri{
+  position: absolute;
+  background-color: #fff;
+  top: 80%;
+  right: -8.5%;
+  width: 5rem;
+  height: 5rem;
+  clip-path: polygon(25% 25%, 75% 25%, 75% 75%, 48.38% 48.38%);
+  
 }
