@@ -136,14 +136,18 @@ html {
     align-items: center;
     width: 80%;
     background-color: hsl(229, 57%, 11%);
+    border-radius: 25px;
     height: 1.5rem;
     &__color{
+      display: flex;
+      justify-content: end;
       width: 60%;
       height: 1.2rem;
       background: linear-gradient( hsl(6, 100%, 80%), hsl(335, 100%, 65%)) ;
       border-radius: 20px;
     }
     &-ball{
+      
       width: 1.2rem;
       height: 1.2rem;
       background-color: #fff;

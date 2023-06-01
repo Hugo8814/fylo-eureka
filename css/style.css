@@ -108,11 +108,14 @@ html {
   align-items: center;
   width: 80%;
   background-color: #0c122c;
+  border-radius: 25px;
   height: 1.5rem; }
   .side__bar__color {
+    display: flex;
+    justify-content: end;
     width: 60%;
     height: 1.2rem;
-    background-color: linear-gradient(#ffa399, #ff4d97);
+    background: linear-gradient(#ffa399, #ff4d97);
     border-radius: 20px; }
   .side__bar-ball {
     width: 1.2rem;
