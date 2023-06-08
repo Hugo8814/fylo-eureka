@@ -6,6 +6,7 @@
   box-sizing: inherit; }
 
 html {
+  font-family: "Raleway", sans-serif;
   font-size: 62.5%;
   background-image: url(../images/bg-desktop.png);
   background-repeat: no-repeat;
@@ -41,12 +42,6 @@ html {
   margin-right: 5rem;
   border-radius: 10px 100px 10px 10px; }
 
-.side-2 {
-  border-radius: 10px;
-  width: 60rem;
-  height: 15rem;
-  background-color: #1d2c67; }
-
 .side__logo {
   margin-top: 3rem;
   margin-left: 3.5rem;
@@ -65,3 +60,62 @@ html {
   border-radius: 10px; }
   .side__svgbox-1 {
     margin-left: 3.5rem; }
+
+.side-2 {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  position: relative;
+  width: 60rem;
+  height: 15rem;
+  background-color: #1d2c67; }
+
+.side__text {
+  font-size: 14px;
+  color: #f5f0f0;
+  font-weight: 200; }
+  .side__text-8 {
+    font-weight: 800;
+    color: #fff; }
+
+.side__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 200;
+  width: 15rem;
+  height: 8rem;
+  background-color: #fff;
+  position: absolute;
+  top: -30%;
+  right: 7%;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 100% 100%, 79% 75%, 50% 75%, 0% 75%);
+  border-radius: 9px; }
+  .side__box-1 {
+    font-size: 38px;
+    font-weight: 800;
+    margin-bottom: 3rem; }
+  .side__box-gb {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 800;
+    color: gray;
+    margin-bottom: 2rem; }
+
+.side__bar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 80%;
+  background-color: #0c122c;
+  height: 1.5rem; }
+  .side__bar__color {
+    width: 60%;
+    height: 1.2rem;
+    background-color: linear-gradient(#ffa399, #ff4d97);
+    border-radius: 20px; }
+  .side__bar-ball {
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: #fff;
+    border-radius: 50%; }
