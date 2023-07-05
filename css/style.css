@@ -6,6 +6,7 @@
   box-sizing: inherit; }
 
 html {
+  display: flex;
   font-family: "Raleway", sans-serif;
   font-size: 62.5%;
   background-image: url(../images/bg-desktop.png);
@@ -14,6 +15,20 @@ html {
   width: 100%;
   height: 100vh;
   background-position: bottom; }
+  @media only screen and (max-width: 68.75em) {
+    html {
+      font-size: 82.5%;
+      background-image: url(../images/bg-mobile.png);
+      background-size: cover; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 72.5%; } }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 62.5%; } }
+  @media only screen and (max-width: 31.25em) {
+    html {
+      font-size: 52.5%; } }
 
 .svg-large {
   width: 2.8rem;
@@ -22,20 +37,21 @@ html {
 
 body {
   display: flex;
-  flex-wrap: wrap;
   width: 100%;
   height: 100vh;
   justify-content: center;
   align-items: center; }
-  @media only screen and (max-width: 68.75em) {
-    body {
-      background-position: cover; } }
 
 .bob {
   display: flex;
-  width: 110rem;
+  flex-wrap: wrap;
   align-items: end;
-  margin-bottom: 4rem; }
+  margin-bottom: -8rem; }
+  @media only screen and (max-width: 68.75em) {
+    .bob {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; } }
 
 .side-1 {
   display: flex;
@@ -43,8 +59,28 @@ body {
   width: 35rem;
   height: 20rem;
   background-color: #1d2c67;
-  margin-right: 5rem;
-  border-radius: 10px 100px 10px 10px; }
+  margin-right: 4rem;
+  border-radius: 10px 100px 10px 10px;
+  margin-left: 9rem; }
+  @media only screen and (max-width: 68.75em) {
+    .side-1 {
+      margin: 0;
+      margin-bottom: 3rem; } }
+
+.side-2 {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  position: relative;
+  width: 60rem;
+  height: 15rem;
+  background-color: #1d2c67; }
+  @media only screen and (max-width: 68.75em) {
+    .side-2 {
+      width: 35rem;
+      justify-content: center;
+      align-items: center;
+      align-content: center; } }
 
 .side__logo {
   margin-top: 3rem;
@@ -65,21 +101,15 @@ body {
   .side__svgbox-1 {
     margin-left: 3.5rem; }
 
-.side-2 {
-  display: flex;
-  flex-wrap: wrap;
-  border-radius: 10px;
-  position: relative;
-  width: 60rem;
-  height: 15rem;
-  background-color: #1d2c67; }
-
 .side__text {
   font-size: 14px;
   color: #f5f0f0;
   font-weight: 200;
   margin-left: 3rem;
   margin-top: 4.5rem; }
+  @media only screen and (max-width: 68.75em) {
+    .side__text {
+      margin: 0rem; } }
   .side__text-8 {
     font-weight: 800;
     color: #fff; }
@@ -96,6 +126,11 @@ body {
   top: -30%;
   right: 7%;
   border-radius: 9px 9px 0px 9px; }
+  @media only screen and (max-width: 68.75em) {
+    .side__box {
+      border-radius: 9px;
+      right: 25%;
+      top: 75%; } }
   .side__box-1 {
     font-size: 38px;
     font-weight: 800;
@@ -153,3 +188,6 @@ body {
   width: 5rem;
   height: 5rem;
   clip-path: polygon(25% 25%, 75% 25%, 75% 75%, 48.38% 48.38%); }
+  @media only screen and (max-width: 68.75em) {
+    .tri {
+      display: none; } }
